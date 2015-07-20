@@ -1,0 +1,23 @@
+<form action="/articles/{{id}}" method="POST">
+	<input type="hidden" name="_method" value="PUT">
+
+	<label for="name">Title<br>
+		<input type="text" name="title" value="{{title}}">
+	</label><br>
+
+	<label for="content">New Article's Content<br>
+		<textarea name="content" style="width: 120px; height: 90px;">{{content}}</textarea>
+	</label><br>
+
+	<label for="date_changed"><br>
+		<p>Date Changes Made</p>
+	</label>
+
+	<br>
+	<input type="submit" value="Submit" style="position: relative; top: 20px;">
+</form>
+
+{{!-- 
+<script>
+	document.getElementByTagName("p").innerHTML = Date();
+</script> --}}

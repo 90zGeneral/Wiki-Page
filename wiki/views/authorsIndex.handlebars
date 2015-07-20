@@ -1,0 +1,22 @@
+<h2 style="text-align: center;">Below are all the employees who published an article to our site</h2>
+<h4 style="text-align: center;">Click their usernames to see all the articles they have written!</h4>
+
+{{#each authors}}
+	<div class="single">
+		<h3>
+			<a href="/authors/{{id}}">{{username}}</a>
+		</h3>
+	</div>
+
+<form action="/authors/{{id}}" method="POST">
+	<input type="hidden" name="_method" value="DELETE">
+	<button>
+			<strong>DELETE</strong>
+	</button>
+</form>
+
+{{/each}}
+
+<div class="nav">
+	<a href="/authors/new">Add a new author</a>
+</div>

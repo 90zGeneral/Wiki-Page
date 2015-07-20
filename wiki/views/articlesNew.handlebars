@@ -1,0 +1,22 @@
+<div>
+	<form action="/articles" method="POST">
+		<p>
+			<select name="author_id">
+				{{#each authors}}
+					<option value="{{id}}">{{username}}</option>
+				{{/each}}
+			</select>
+
+			<select name="category_id">
+				{{#each categories}}
+					<option value="{{id}}">{{name}}</option>
+				{{/each}}
+			</select>
+		</p>
+		<input type="text" name="title" placeholder="title">
+		<p>
+			<textarea type="text" name="content" placeholder="Write your article here" style="width: 120px; height: 90px"></textarea>
+		</p>
+		<button type="submit">Submit</button>
+	</form>
+</div>

@@ -1,0 +1,13 @@
+<h1>Here are all the articles written by employess</h1>
+
+{{#each articles}}
+	<div>
+		<h3>
+			<p><a href="/articles/{{id}}">{{title}}</a></p>
+		</h3>
+	</div>
+{{/each}}
+
+<div>
+	<a href="/articles/new">Add a new Article</a>
+</div>
