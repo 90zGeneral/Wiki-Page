@@ -5,6 +5,15 @@ module.exports = {
 	end: function() {
 		pg.end();
 	},
+	query: function(q, cb){
+		pg.connect(dbUrl, function (err, client, done) {
+			client.query(q, function (err, result) {
+				done();
+				cb(result.rows);
+			});
+		});
+		this.end();
+	},
 	all: function (table, cb) {
 		pg.connect(dbUrl, function (err, client, done) {
 			client.query('SELECT * FROM ' + table, function (err, result) {
@@ -27,6 +36,9 @@ module.exports = {
 		pg.connect(dbUrl, function (err, client, done) {
 			client.query('SELECT * FROM ' + table + ' WHERE ' + table + '.' + column + ' = ' + id, function (err, result) {
 				done();
+				if(err) {
+					console.error(err);
+				}
 				cb(result.rows);
 			});
 		});
@@ -76,6 +88,12 @@ module.exports = {
 		})
 		this.end();
 	}
-
+	// findArticleAuthor: function (table, id, article, cb) {
+	// 	pg.connect(dbUrl, function (err, client, done) {
+	// 		done();
+	// 		client.query('SELECT * FROM ' + table + ' WHERE ')
+	// 	});
+	// }
+// SELECT author.name WHERE articles.author_id = author.id
 };
 

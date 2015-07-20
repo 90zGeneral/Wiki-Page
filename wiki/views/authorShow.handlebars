@@ -1,14 +1,14 @@
 <div>
 	<h3>
-		<a href="/authors/{{author.id}}">{{author.username}}</a>
+		<p>{{author.username}}</p>
 	</h3>
 </div>
 
 {{#each articles}}
 	<div>
-		<p>{{title}}</p>
+		<h4><strong>{{title}}</strong></h4>
 		<p>{{content}}</p>
-		<p>{{date_written}}</p>
+		<p>Published on: {{date_written}}</p>
 	</div>
 {{/each}}
 

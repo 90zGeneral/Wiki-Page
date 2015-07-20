@@ -1,0 +1,10 @@
+<h1 style="text-align: center;">The list of all the different categories for the articles</h1>
+<h4 style="text-align: center;">Click on a category name to see all the articles belonging to that category</h4>
+
+{{#each categories}}
+	<div>
+		<h3>
+			<a href="/categories/{{id}}">{{name}}</a>
+		</h3>
+	</div>
+{{/each}}

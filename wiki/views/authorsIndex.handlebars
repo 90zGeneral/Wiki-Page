@@ -2,18 +2,18 @@
 <h4 style="text-align: center;">Click their usernames to see all the articles they have written!</h4>
 
 {{#each authors}}
-	<div class="single">
+	<div>
 		<h3>
 			<a href="/authors/{{id}}">{{username}}</a>
 		</h3>
 	</div>
-
+{{!-- 
 <form action="/authors/{{id}}" method="POST">
 	<input type="hidden" name="_method" value="DELETE">
 	<button>
-			<strong>DELETE</strong>
+		<strong>DELETE</strong>
 	</button>
-</form>
+</form> --}}
 
 {{/each}}
 
