@@ -12,6 +12,9 @@ body {
 	text-shadow: 8px 3px 2px #330099;
 	border: 3px solid white;
 }
+.about-us {
+	color: white;
+}
 .register {
 	float: right;
 	margin: 20px;
@@ -85,21 +88,32 @@ a {
 	color: white;
 }
 #create-title-div {
-	float: left;
 	color: white;
 }
 #create-form {
 	text-align: center;
-	border: 1px solid white;
+	padding: 30px;
 }
 .create-input {
-	position: relative;
-	left: 265px;
-	top: 170px;
 	display: block;
 	text-align: center;
-	margin: 1px;
+	margin: 10px auto;
+	font-size: 21px;
 }
-#main-create-div {
+/*#main-create-div {
 	border: 1px solid white;
+}*/
+#create-button {
+	position: relative;
+	top: 30px;
+	height: 45px;
+	width: 80px;
+	border-radius: 8px;
+	background-color: green;
+}
+/*#create-button-div {
+	border: 1px solid white;
+}*/
+#form-container {
+	border: 2px solid white;
 }

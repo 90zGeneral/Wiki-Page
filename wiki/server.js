@@ -7,6 +7,7 @@ var bodyParser     = require('body-parser');
 var fs 			   = require('fs');
 var methodOverride = require('method-override');
 var db             = require('./db.js');
+var session        = require('express-session');
 
 var app = express();
 
@@ -20,6 +21,19 @@ app.use(bodyParser.urlencoded({extended: true}));
 // Loads static files
 app.use(express.static('public'));
 app.use(logger('dev'));
+
+app.use(bodyParser.json());
+
+// Allowing the use of session for login into account
+app.use(session({
+  secret: 'thisisitotallysecret',
+  saveUninitialized: false,
+  resave: false
+}));
+
+app.get('/session', function(req, res) {
+  res.send(req.session);
+});
 
 // Allows us to use methods PUT and DELETE for forms
 app.use(methodOverride(function (req, res) {

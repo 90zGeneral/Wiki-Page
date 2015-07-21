@@ -9,15 +9,9 @@
 		<textarea name="content" style="width: 120px; height: 90px;">{{content}}</textarea>
 	</label><br>
 
-	<label for="date_changed"><br>
-		<p>Date Changes Made</p>
-	</label>
+	{{!-- the input below will change the current timestamp to the new time each time an article is updated. --}}
+	<input type="hidden" name="date_written" value="now">
 
 	<br>
 	<input type="submit" value="Submit" style="position: relative; top: 20px;">
 </form>
-
-{{!-- 
-<script>
-	document.getElementByTagName("p").innerHTML = Date();
-</script> --}}

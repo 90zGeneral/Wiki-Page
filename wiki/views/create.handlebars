@@ -4,8 +4,8 @@
 		<p id="create-requirements">* indicates required field.</p>
 	</div>
 
-	<div id="create-form">
-		<form action="/create" method="POST">
+	<div id="form-container">
+		<form action="/create" method="POST" id="create-form">
 			<input type="text" name="first_name" placeholder="First Name" class="create-input">
 			<input type="text" name="last_name" placeholder="Last Name" class="create-input">
 			<input type="text" name="username" placeholder="Username" class="create-input">
@@ -13,7 +13,7 @@
 			<input type="text" name="age" placeholder="Age" class="create-input">
 			<input type="text" name="password" placeholder="Password" class="create-input">
 			<input type="text" name="password" placeholder="Confirm Password" class="create-input">
-			<button type="submit">Submit</button>
+			<button type="submit" id="create-button">Submit</button>
 		</form>
 	</div>
 
