@@ -6,8 +6,6 @@ DROP TABLE IF EXISTS articles CASCADE;
 CREATE TABLE authors (
 	id SERIAL PRIMARY KEY,
 	title VARCHAR(50),
-	department TEXT,
-	full_time BOOLEAN,
 	username TEXT,
 	email TEXT,
 	password TEXT

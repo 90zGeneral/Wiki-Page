@@ -58,4 +58,20 @@ app.get('/about_us', function (req, res) {
 	res.render('about_us');
 });
 
+app.get('/login', function (req, res) {
+	res.render('login');
+});
+
+app.get('/create', function (req, res) {
+	res.render('create');
+});
+
+app.post('/login', function (req, res) {
+	res.redirect('/');
+});
+
+app.post('/create', function (req, res) {
+	res.redirect('/');
+});
+
 

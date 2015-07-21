@@ -1,0 +1,105 @@
+body {
+	background: black;
+}
+#british-link-logo {
+	width: 1410px;
+	height: 490px;
+}
+#main_title {
+	text-align: center;
+	font-size: 70px;
+	color: 00ff33;
+	text-shadow: 8px 3px 2px #330099;
+	border: 3px solid white;
+}
+.register {
+	float: right;
+	margin: 20px;
+}
+#create_account {
+	margin: 15px;
+	position: relative;
+	top: -73px;
+	left: 40px;
+}
+.nav {
+	position: relative;
+	left: 100px;
+	text-align: center;
+	font-size: 30px;
+	font-size: 40px;
+}
+a {
+	margin: 10px;
+	text-decoration: none;
+}
+#login {
+	position: relative;
+	top: -65px;
+	left: 25px;
+	width: 1px;
+	height: 1px;
+}
+.main_nav {
+	color: ffff00;
+}
+#log-page {
+	text-align: center;
+	position: relative;
+	top: 80px;
+	left: 390px;
+	width: 700px;
+	height: 200px;
+	border: 1px solid white;
+}
+.login-input {
+	position: relative;
+	left: 255px;
+	display: block;
+	width: 200px;
+	height: 25px;
+}
+#forgot-pword {
+	position: relative;
+	top: 25px;
+	color: red;
+}
+#login-button-div {
+	text-align: right;
+	position: relative;
+	top: 48px;
+	height: 25px;
+	border-top: 1px solid white;
+}
+#login-button {
+	position: relative;
+	top: 0px;
+	width: 60px;
+	font-size: 14px;
+	background: green;
+	cursor: pointer;
+}
+#login-form {
+	position: relative;
+	top: -40px;
+	color: white;
+}
+#create-title-div {
+	float: left;
+	color: white;
+}
+#create-form {
+	text-align: center;
+	border: 1px solid white;
+}
+.create-input {
+	position: relative;
+	left: 265px;
+	top: 170px;
+	display: block;
+	text-align: center;
+	margin: 1px;
+}
+#main-create-div {
+	border: 1px solid white;
+}

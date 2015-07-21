@@ -1,5 +1,5 @@
 // To connect to my db.js file 
-var db = require('./db.js');
+// var db = require('./db.js');
 
 // This is an array to store the names of all the authors.
 var writers = ["Roydon"];
