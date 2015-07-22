@@ -1,28 +1,28 @@
-<div style="background: black">
+<div>
 	<h3>
-		<p>{{category.name}}</p>
+		<p style="color: red; margin: 15px 30px;">{{category.name}}</p>
 	</h3>
 </div>
 
 {{#each articles}}
-	<div>
-		<h2>{{title}}</h2>
-		<p>{{content}}</p>
-		<p>Published on: {{date_written}}</p>
+	<div style="position: relative; top: 40px;">
+		<h2 style="color: yellow; margin: 15px 30px;">{{title}}</h2>
+		<p style="color: white; margin: 15px 30px;">{{content}}</p>
+		<p style="color: white; margin: 15px 30px;">Published on: {{date_written}}</p>
 	</div>
 
-	<div>
-		<p>Published by: {{username}}</p>
+	<div style="position: relative; top: 40px;">
+		<p style="color: white; margin: 15px 30px;">Published by: {{username}}</p>
 	</div>
 
-	<div>
+	<div style="position: relative; top: 40px;">
 		<a href="/articles/edit/{{id}}">
-			<strong>Edit Article</strong>
+			<strong style="color: blue; margin: 15px 30px;">Edit Article</strong>
 		</a>
 		<br>
 		<form action="/articles/{{id}}" method="POST">
 			<input type="hidden" name="_method" value="DELETE">
-			<button style="position: relative; top: 20px; color: blue; cursor: pointer">Delete Article</button>
+			<button style="position: relative; top: 20px; color: white; background: green; margin: 15px 30px; cursor: pointer">Delete Article</button>
 		</form>
 	</div>
 {{/each}}

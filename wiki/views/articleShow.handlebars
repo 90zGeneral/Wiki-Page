@@ -1,17 +1,17 @@
 <div>
-	<h3><strong>{{article.title}}</strong></h3>
+	<h3 style="color: red; margin: 15px 30px;"><strong>{{article.title}}</strong></h3>
 
-	<p>{{article.content}}</p>
-	<p>Published on: {{article.date_written}}</p>
-	<p>Published by: {{author.username}}</p>
+	<p style="color: white; margin: 15px 30px;">{{article.content}}</p>
+	<p style="color: white; margin: 15px 30px;">Published on: {{article.date_written}}</p>
+	<p style="color: white; margin: 15px 30px;">Published by: {{author.username}}</p>
 
 	<a href="/articles/edit/{{article.id}}">
-		<strong>Edit Article</strong>
+		<strong style="color: yellow; margin: 15px 30px;">Edit Article</strong>
 	</a>
 	<br>
 	<form action="/articles/{{article.id}}" method="POST">
 		<input type="hidden" name="_method" value="DELETE">
-		<button style="position: relative; top: 20px; color: blue; cursor: pointer">Delete Article</button>
+		<button style="position: relative; top: 20px; color: white; background: green; margin: 15px 30px; cursor: pointer; border-radius: 5px;">Delete Article</button>
 	</form>
 </div>
 

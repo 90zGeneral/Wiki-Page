@@ -1,13 +1,13 @@
-<h1>Here are all the articles written by employess</h1>
+<h1>Here are all the articles written by users of our site</h1>
 
 {{#each articles}}
 	<div>
 		<h3>
-			<p><a href="/articles/{{id}}">{{title}}</a></p>
+			<p><a href="/articles/{{id}}" style="color: green; text-decoration: underline; margin: 15px 30px">{{title}}</a></p>
 		</h3>
 	</div>
 {{/each}}
 
 <div>
-	<a href="/articles/new">Add a new Article</a>
+	<a href="/articles/new" id="new-article">Add a new Article</a>
 </div>

@@ -1,5 +1,10 @@
+header {
+	margin: 1px auto;
+}
 body {
 	background: black;
+	margin: 0;
+	width: 100%;
 }
 #british-link-logo {
 	width: 1410px;
@@ -13,7 +18,22 @@ body {
 	border: 3px solid white;
 }
 .about-us {
+	border: 2px solid white;
+	width: 550px;
+	margin: 23px 25px;
+	float: left;
+	height: 500px;
+}
+.about-us-descrip {
+	font-size: 45px;
 	color: white;
+	text-align: center;
+}
+.about-us-we {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
 }
 .register {
 	float: right;
@@ -27,10 +47,9 @@ body {
 }
 .nav {
 	position: relative;
-	left: 100px;
+	/*left: 100px;*/
 	text-align: center;
 	font-size: 30px;
-	font-size: 40px;
 }
 a {
 	margin: 10px;
@@ -45,6 +64,8 @@ a {
 }
 .main_nav {
 	color: ffff00;
+	position: relative;
+	left: 100px;
 }
 #log-page {
 	text-align: center;
@@ -117,3 +138,80 @@ a {
 #form-container {
 	border: 2px solid white;
 }
+#contact-container {
+	position: relative;
+	top: 20px;
+
+}
+.contact {
+	color: white;
+	text-align: center;
+	position: relative;
+}
+#contact-us {
+	position: relative;
+	left: 100px;
+}
+#lets-talk {
+	position: relative;
+	left: 80px;
+}
+.contact-input {
+	display: block;
+	position: relative;
+	left: 600px;
+	margin: 30px;
+}
+#inner-inp1 {
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	font-size: 12px;
+}
+#inner-inp2 {
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	font-size: 12px;
+}
+#contact-text {
+	width: 400px;
+	height: 150px;
+	font-size: 15px;
+}
+#contact-button {
+	background-color: green;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#author-username {
+	font-size: 28px;
+	color: blue;
+	position: relative;
+	top: 60px;
+	left: 10px;
+}
+#new-author {
+	color: red;
+	float: right;
+	position: relative;
+	top: -5px;
+	left: -15px;
+
+}
+#new-article {
+	color: red;
+	float: right;
+	position: relative;
+	top: -145px;
+	left: -15px;
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+

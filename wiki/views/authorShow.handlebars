@@ -1,14 +1,14 @@
 <div>
 	<h3>
-		<p>{{author.username}}</p>
+		<p id="author-show-username" style="color: blue; font-size: 25px; margin: 0px 20px;">{{author.username}}</p>
 	</h3>
 </div>
 
 {{#each articles}}
 	<div>
-		<h4><strong>{{title}}</strong></h4>
-		<p>{{content}}</p>
-		<p>Published on: {{date_written}}</p>
+		<h4 id="author-show-title" style="color: yellow; text-decoration: underline; margin: 15px 20px"><strong>{{title}}</strong></h4>
+		<p class="author-show" style="color: white; margin: 15px 20px">{{content}}</p>
+		<p class="author-show" style="color: white; margin: 15px 20px">Published on: {{date_written}}</p>
 	</div>
 {{/each}}
 
