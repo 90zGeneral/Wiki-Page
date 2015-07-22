@@ -207,6 +207,22 @@ a {
 	left: -15px;
 	font-size: 30px;
 }
+.author-new {
+	display: block;
+	width: 120px;
+	height: 30px;
+	margin: 15px 30px;
+/*	position: relative;
+	top: 50px;
+	left: 595px;*/
+}
+#author-new-button {
+	margin: 15px 30px;
+/*	position: relative;
+	left: 600px;*/
+	color: white;
+	background-color: green;
+}
 
 
 

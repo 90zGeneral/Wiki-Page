@@ -16,6 +16,9 @@ module.exports = {
 	},
 	all: function (table, cb) {
 		pg.connect(dbUrl, function (err, client, done) {
+			if(err) {
+				console.error(err);
+			}
 			client.query('SELECT * FROM ' + table, function (err, result) {
 				done();
 				cb(result.rows);
@@ -65,6 +68,9 @@ module.exports = {
 			});
 			var query = 'INSERT INTO ' + table + '(' + columns.join(', ') + ') VALUES(' + dollars.join(', ') + ') RETURNING id AS id'; 
 			client.query(query, values, function (err, result) {
+				if(err) {
+					console.error(err);
+				}
 				done();
 				cb(result.rows[0]);
 			});

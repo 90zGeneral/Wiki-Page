@@ -1,12 +1,12 @@
 <div>
 	<h3>
-		<p style="color: red; margin: 15px 30px;">{{category.name}}</p>
+		<p style="color: blue; margin: 15px 30px;">{{category.name}}</p>
 	</h3>
 </div>
 
 {{#each articles}}
 	<div style="position: relative; top: 40px;">
-		<h2 style="color: yellow; margin: 15px 30px;">{{title}}</h2>
+		<h2 style="color: red; margin: 15px 30px;">{{title}}</h2>
 		<p style="color: white; margin: 15px 30px;">{{content}}</p>
 		<p style="color: white; margin: 15px 30px;">Published on: {{date_written}}</p>
 	</div>
@@ -17,7 +17,7 @@
 
 	<div style="position: relative; top: 40px;">
 		<a href="/articles/edit/{{id}}">
-			<strong style="color: blue; margin: 15px 30px;">Edit Article</strong>
+			<strong style="color: yellow; margin: 15px 30px;">Edit Article</strong>
 		</a>
 		<br>
 		<form action="/articles/{{id}}" method="POST">
